@@ -1,0 +1,27 @@
+﻿<Window x:Class="RaceCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RaceCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid Margin="0,0,-27.4,-19.6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="581*"/>
+            <ColumnDefinition Width="240*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="305*"/>
+            <RowDefinition Height="750*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#A9A9A9" HorizontalAlignment="Center" Height="500" Margin="223,10,197.8,0" Stroke="Black" VerticalAlignment="Top" Width="400" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <Rectangle Fill="White" HorizontalAlignment="Center" Height="124" Margin="424,10,144.8,0" Stroke="Black" VerticalAlignment="Top" Width="12" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="White" HorizontalAlignment="Center" Height="124" Margin="424,191,144.8,0" Stroke="Black" VerticalAlignment="Top" Width="12" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="500" Margin="223,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="500" Margin="37.2,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="5" Grid.RowSpan="2" Grid.Column="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="27" Margin="28,69,0,0" VerticalAlignment="Top" Width="69" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="White" HorizontalAlignment="Center" Height="124" Margin="424,158,144.8,0" Stroke="Black" VerticalAlignment="Top" Width="12" Grid.Row="1" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
