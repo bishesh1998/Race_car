@@ -12,3 +12,17 @@ C:\Users\Bishesh\source\repos\RaceCar\RaceCar\obj\Debug\RaceCar.Properties.Resou
 C:\Users\Bishesh\source\repos\RaceCar\RaceCar\obj\Debug\RaceCar.csproj.GenerateResource.cache
 C:\Users\Bishesh\source\repos\RaceCar\RaceCar\obj\Debug\RaceCar.exe
 C:\Users\Bishesh\source\repos\RaceCar\RaceCar\obj\Debug\RaceCar.pdb
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\bin\Debug\RaceCar.exe.config
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\bin\Debug\RaceCar.exe
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\bin\Debug\RaceCar.pdb
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.csprojAssemblyReference.cache
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\MainWindow.g.cs
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\App.g.cs
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar_MarkupCompile.cache
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar_MarkupCompile.lref
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\MainWindow.baml
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.g.resources
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.Properties.Resources.resources
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.csproj.GenerateResource.cache
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.exe
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.pdb
