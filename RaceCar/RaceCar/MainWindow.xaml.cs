@@ -50,7 +50,7 @@ namespace RaceCar
         {
             trophy.Visibility = Visibility.Collapsed;
 
-            button1.IsEnabled = false;
+            button1.IsEnabled = true;
 
             explosion.Visibility = Visibility.Collapsed;
 
@@ -182,7 +182,7 @@ namespace RaceCar
             //Respawing the AI cars and changing their images
             if (AI1.Margin.Top > Base.Height)
             {
-                //changeAI1();
+                changeAI1();
                 a1L.Left = rnd.Next(2, 160);
                 AI1.Margin = a1L;
 
@@ -253,10 +253,61 @@ namespace RaceCar
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void changeAI1()
         {
-            Reset();
+            int num = rnd.Next(1, 8);
+            switch (num)
+            {
+
+                case 1:
+                    //AI1.Image = Properties.Resources.carGreen;
+                    AI1.Source = new BitmapImage(new Uri("carGreen.png",UriKind.Relative));
+                    break;
+
+                case 2:
+                    //AI1.Image = Properties.Resources.carGrey;
+                    AI1.Source = new BitmapImage(new Uri("carGrey.png", UriKind.Relative));
+                    break;
+
+                case 3:
+                    //AI1.Image = Properties.Resources.carOrange;
+                    AI1.Source = new BitmapImage(new Uri("carOrange.png", UriKind.Relative));
+                    break;
+
+                case 4:
+                    //AI1.Image = Properties.Resources.carPink;
+                    AI1.Source = new BitmapImage(new Uri("carPink.png", UriKind.Relative));
+                    break;
+
+                case 5:
+                    //AI1.Image = Properties.Resources.CarRed;
+                    AI1.Source = new BitmapImage(new Uri("carRed.png", UriKind.Relative));
+                    break;
+
+                case 6:
+                    //AI1.Image = Properties.Resources.TruckBlue;
+                    AI1.Source = new BitmapImage(new Uri("TruckBlue.png", UriKind.Relative));
+                    break;
+
+                case 7:
+                    //AI1.Image = Properties.Resources.TruckWhite;
+                    AI1.Source = new BitmapImage(new Uri("TruckWhite.png", UriKind.Relative));
+                    break;
+
+                case 8:
+                    //AI1.Image = Properties.Resources.ambulance;
+                    AI1.Source = new BitmapImage(new Uri("ambulance.png", UriKind.Relative));
+                    break;
+                default:
+                    break;
+            }
         }
 
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Clicked");
+            //Reset();
+        }
     }
 }
