@@ -7,17 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="800">
     <Grid HorizontalAlignment="Left" Height="800" Margin="-10,-10,0,-19.6" VerticalAlignment="Top" Width="800" Background="AntiqueWhite">
-        <Label Content="00" Height="27" Width="40" FontSize="16" FontWeight="Bold" Margin="408,596,352,177"/>
-        <Label Content="Distance :" Height="27" Width="85" FontSize="16" FontWeight="Bold" Margin="323,591,392,182"/>
-        <Button Content="Start" Height="59" Width="130" FontWeight="Bold" FontSize="16" Background="AliceBlue" Foreground="Brown" Margin="318,628,352,113"/>
-        <TextBlock Height="71" TextWrapping="Wrap" Width="287" FontFamily="Segoe UI Symbol" FontWeight="Bold" FontSize="16" Foreground="Blue" Margin="237,704,276,25"><Run Text="Avoid other cars and get points"/><LineBreak/><Run/><LineBreak/><Run Text="Use Left and Right Key to Move the car"/></TextBlock>
-        <Grid HorizontalAlignment="Left" Height="424" Margin="220,130,0,0" VerticalAlignment="Top" Width="380" Background="#808080" Grid.Row="0" >
+        <Label Name="distance" Content="00" Height="27" Width="40" FontSize="16" FontWeight="Bold" Margin="413,591,347,182"/>
+        <Label Content="Distance :" Height="27" Width="85" FontSize="16" FontWeight="Bold" Margin="328,591,387,182"/>
+        <Button Name="button1" Content="Start" Height="59" Width="130" FontWeight="Bold" FontSize="16" Background="AliceBlue" Foreground="Brown" Margin="323,631,347,110" Click="Button1_Click"/>
+        <TextBlock Height="71" TextWrapping="Wrap" Width="287" FontFamily="Segoe UI Symbol" FontWeight="Bold" FontSize="16" Foreground="Blue" Margin="255,701,258,28"><Run Text="Avoid other cars and get points"/><LineBreak/><Run/><LineBreak/><Run Text="Use Left and Right Key to Move the car"/></TextBlock>
+        <Grid Name="Base" HorizontalAlignment="Left" Height="424" Margin="220,130,0,0" VerticalAlignment="Top" Width="380" Background="#808080" ClipToBounds="True" >
             <Image x:Name="roadTrack1" HorizontalAlignment="Left" Height="632" Margin="-2,-638,0,0" Width="385" Source="roadTrack.jpg"/>
             <Image x:Name="roadTrack2" HorizontalAlignment="Left" Height="632" Margin="-3,-222,0,0" Width="385" Source="roadTrack.jpg"/>
+            <Image x:Name="AI1" Height="101" Width="50" Source="carGrey.png" Stretch="UniformToFill" Margin="66,19"/>
+            <Image x:Name="AI2" Height="101" Width="50" Source="carGreen.png" Stretch="UniformToFill" Margin="294,95,0,0"/>
+            <Image x:Name="explosion" Height="84" Width="84" Source="explosion.gif" Stretch="UniformToFill" Margin="153,234,0,0"/>
+            <Image x:Name="player" Height="101" Width="50" Source="carYellow.png" Stretch="UniformToFill" Margin="161,286,0,0"/>
+            <Image x:Name="trophy" Height="100" Width="250" Source="bronze.png" Stretch="UniformToFill" Margin="66,286,0,0"/>
         </Grid>
-        
-
-
 
     </Grid>
 

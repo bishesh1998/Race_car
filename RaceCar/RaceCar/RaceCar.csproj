@@ -100,5 +100,17 @@
   <ItemGroup>
     <Resource Include="carGreen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="carGrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="carYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bronze.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
