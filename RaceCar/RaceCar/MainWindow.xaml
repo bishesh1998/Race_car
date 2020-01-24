@@ -7,19 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="800">
     <Grid HorizontalAlignment="Left" Height="800" Margin="-10,-10,0,-19.6" VerticalAlignment="Top" Width="800" Background="AntiqueWhite">
-        <Label Name="distance" Content="00" Height="27" FontSize="16" FontWeight="Bold" Margin="413,591,347,182" ClipToBounds="False"/>
-        <Label Content="Distance :" Height="27" Width="85" FontSize="16" FontWeight="Bold" Margin="328,591,387,182"/>
-        <TextBlock Height="71" TextWrapping="Wrap" Width="287" FontFamily="Segoe UI Symbol" FontWeight="Bold" FontSize="16" Foreground="Blue" Margin="255,701,258,28"><Run Text="Avoid other cars and get points"/><LineBreak/><Run/><LineBreak/><Run Text="Use Left and Right Key to Move the car"/></TextBlock>
-        <Grid Name="Base" HorizontalAlignment="Left" Height="424" Margin="220,130,0,0" VerticalAlignment="Top" Width="380" Background="#808080" ClipToBounds="True" >
-            <Image x:Name="roadTrack1" HorizontalAlignment="Left" Height="632" Margin="-2,-638,0,0" Width="385" Source="roadTrack.jpg"/>
-            <Image x:Name="roadTrack2" HorizontalAlignment="Left" Height="632" Margin="-3,-222,0,0" Width="385" Source="roadTrack.jpg"/>
-            <Image x:Name="AI1" Height="101" Width="50" Source="carGrey.png" Stretch="UniformToFill" Margin="66,19"/>
-            <Image x:Name="AI2" Height="101" Width="50" Source="carGreen.png" Stretch="UniformToFill" Margin="294,95,0,0"/>
-            <Image x:Name="explosion" Height="84" Width="84" Source="explosion.gif" Stretch="UniformToFill" Margin="153,234,0,0"/>
-            <Image x:Name="player" Height="101" Width="50" Source="carYellow.png" Stretch="UniformToFill" Margin="161,286,0,0"/>
-            <Image x:Name="trophy" Height="100" Width="250" Source="bronze.png" Stretch="UniformToFill" Margin="66,286,0,0"/>
-        </Grid>
+        <Label Name="distance" Content="00" Height="27" FontSize="16" FontWeight="Bold" Margin="415,691,295,82" ClipToBounds="False"/>
+        <Label Content="Distance :" Height="27" Width="85" FontSize="16" FontWeight="Bold" Margin="325,691,390,82"/>
+        <TextBlock TextWrapping="Wrap" FontFamily="Segoe UI Symbol" FontWeight="Bold" FontSize="16" Foreground="Blue" Margin="216,71,204,632"><Run Text="Avoid other cars and get points"/><LineBreak/><Run/><LineBreak/><Run Text="Use 'A' key to move left and 'D' key to move right"/></TextBlock>
+
+        <Canvas Name="Base" HorizontalAlignment="Center" Height="424" Margin="12,12,0,0" VerticalAlignment="Center" Width="380" Background="Black" ClipToBounds="True" >
+            <Image x:Name="roadTrack1" HorizontalAlignment="Left" Height="632" Margin="-2,-638,0,0" Width="385" Source="roadTrack1.jpg"/>
+            <Image x:Name="roadTrack2" HorizontalAlignment="Left" Height="632" Margin="-3,-222,0,0"  Width="385" Source="roadTrack2.jpg"/>
+            <Image x:Name="AI1" Height="101" Width="50" Source="carGrey.png" Stretch="UniformToFill" Visibility="Visible" Canvas.Left="296" Canvas.Top="78"/>
+            <Image x:Name="AI2" Height="101" Width="50" Source="carGreen.png" Stretch="UniformToFill" RenderTransformOrigin="-0.042,0.451" Canvas.Left="59" Canvas.Top="78" Visibility="Visible"/>
+            <Image x:Name="explosion" Height="131" Width="141" Source="explosion.gif" Stretch="UniformToFill" RenderTransformOrigin="1.262,0.915" Canvas.Left="119" Canvas.Top="240" Panel.ZIndex="99"/>
+            <Image x:Name="player" Height="101" Width="50" Source="carYellow.png" Stretch="UniformToFill" Visibility="Visible" Canvas.Left="164" Canvas.Top="270"/>
+            <Image x:Name="trophy" Height="100" Width="250" Source="bronze.png" Stretch="UniformToFill" RenderTransformOrigin="0.498,-0.562" Panel.ZIndex="3" Canvas.Left="71" Canvas.Top="10"/>
+            <Rectangle Name ="playerHit" Fill="Yellow" Height="101" Width="50" Visibility="Hidden" Canvas.Left="164" Canvas.Top="270"/>
+            <Rectangle Name = "AI1Hit" Fill="Green" Height="101" Stroke="Black" Width="50" Canvas.Left="296" Canvas.Top="78" Visibility="Hidden"/>
+            <Rectangle Name ="AI2Hit" Fill="Red" Height="101" Stroke="Black" Width="50" Canvas.Left="59" Canvas.Top="78" Visibility="Hidden"/>
+
+        </Canvas>
         <Button Name ="button1" Content="Start" FontSize="16" FontWeight="Bold" Background="White" Foreground="Brown" HorizontalAlignment="Left" Height="45" Margin="328,641,0,0" VerticalAlignment="Top" Width="92" Click="Button_Click_1"/>
+        <TextBox Name="Stats" HorizontalAlignment="Left" Height="188" Margin="596,612,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194"/>
+        <MediaElement Name="song" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="24,665,0,0"/>
 
 
     </Grid>

@@ -95,9 +95,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="roadTrack.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="carGreen.png" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +108,40 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bronze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="carOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="carPink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CarRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TruckBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TruckWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="roadTrack1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="roadTrack2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hit.wav" />
+    <Content Include="TokyoDrift.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

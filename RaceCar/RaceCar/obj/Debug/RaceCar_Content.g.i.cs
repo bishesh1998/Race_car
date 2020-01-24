@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bronze.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("hit.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("tokyodrift.wav")]
 
 

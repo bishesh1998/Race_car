@@ -26,3 +26,4 @@ C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.csproj.GenerateRes
 C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.exe
 C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.pdb
 C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar.csprojAssemblyReference.cache
+C:\Users\Bishesh\cs371Final\RaceCar\RaceCar\obj\Debug\RaceCar_Content.g.cs
