@@ -3,6 +3,17 @@
 // CS371 - Whitworth University
 // Members : Bishesh Tuladhar, Pukar Mahat
 /////////////////////////////////////////////////////////////////////////////
+///
+
+/// REFERNCES
+/// Hit box collison detection code reference : stackoverflow.com/questions/34738882/detecting-collision-between-two-rectangles-on-a-wpf-canvas
+/// Dispatch timer reference : docs.microsoft.com/en-us/dotnet/api/system.windows.threading.dispatchertimer?view=netframework-4.8
+/// Media player reference : docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/how-to-play-media-using-a-videodrawing
+/// Key Press event reference : docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keypress?view=netframework-4.8
+
+/// Citation 
+/// Background Music : Tokyo Drift (Fast & Furious) from The Fast And The Furious: Tokyo Drift - Teriyaki Boyz (2006) - Universal Pictures Film Music
+/// Car and Road Images : pixabay.com/images/
 
 using System;
 using System.Collections.Generic;
