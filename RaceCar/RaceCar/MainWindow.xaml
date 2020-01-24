@@ -5,15 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RaceCar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800">
-    <Grid HorizontalAlignment="Left" Height="800" Margin="-10,-10,0,-19.6" VerticalAlignment="Top" Width="800" Background="AntiqueWhite">
-        <Label Name="distance" Content="00" Height="27" FontSize="16" FontWeight="Bold" Margin="415,691,295,82" ClipToBounds="False"/>
-        <Label Content="Distance :" Height="27" Width="85" FontSize="16" FontWeight="Bold" Margin="325,691,390,82"/>
-        <TextBlock TextWrapping="Wrap" FontFamily="Segoe UI Symbol" FontWeight="Bold" FontSize="16" Foreground="Blue" Margin="216,71,204,632"><Run Text="Avoid other cars and get points"/><LineBreak/><Run/><LineBreak/><Run Text="Use 'A' key to move left and 'D' key to move right"/></TextBlock>
+        Title="Fast And Furious" Height="800" Width="800">
+    <Grid HorizontalAlignment="Left" Height="800" Margin="-10,-10,0,-19.6" VerticalAlignment="Top" Width="800" Background="#0092CC">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="63*"/>
+        </Grid.RowDefinitions>
+        <Label Name="distance" Content="00" Height="27" FontSize="16" FontWeight="Bold" Margin="430,521.4,280,82" ClipToBounds="False" Grid.Row="1"/>
+        <Label Content="Distance :" Height="27" Width="85" FontSize="16" FontWeight="Bold" Margin="340,521.4,375,82" Grid.Row="1"/>
+        <TextBlock TextWrapping="Wrap" FontFamily="Segoe UI Symbol" FontWeight="Bold" FontSize="16" Foreground="Orange" Margin="216,92,204,611" Grid.RowSpan="2"><Run Text="Avoid other cars and get points"/><LineBreak/><Run/><LineBreak/><Run Text="Use 'A' key to move left and 'D' key to move right"/></TextBlock>
 
-        <Canvas Name="Base" HorizontalAlignment="Center" Height="424" Margin="12,12,0,0" VerticalAlignment="Center" Width="380" Background="Black" ClipToBounds="True" >
-            <Image x:Name="roadTrack1" HorizontalAlignment="Left" Height="632" Margin="-2,-638,0,0" Width="385" Source="roadTrack1.jpg"/>
-            <Image x:Name="roadTrack2" HorizontalAlignment="Left" Height="632" Margin="-3,-222,0,0"  Width="385" Source="roadTrack2.jpg"/>
+        <Canvas Name="Base" HorizontalAlignment="Center" Height="424" Margin="216,24.4,204,182" VerticalAlignment="Center" Width="380" Background="#808080" ClipToBounds="True" Grid.Row="1" >
+            <Image x:Name="roadTrack1" HorizontalAlignment="Left" Height="632" Width="385" Source="roadTrack1.jpg" Canvas.Left="-3" Canvas.Top="-627"/>
+            <Image x:Name="roadTrack2" HorizontalAlignment="Left" Height="632"  Width="385" Source="roadTrack2.jpg" Canvas.Left="-5" Canvas.Top="-208"/>
             <Image x:Name="AI1" Height="101" Width="50" Source="carGrey.png" Stretch="UniformToFill" Visibility="Visible" Canvas.Left="296" Canvas.Top="78"/>
             <Image x:Name="AI2" Height="101" Width="50" Source="carGreen.png" Stretch="UniformToFill" RenderTransformOrigin="-0.042,0.451" Canvas.Left="59" Canvas.Top="78" Visibility="Visible"/>
             <Image x:Name="explosion" Height="131" Width="141" Source="explosion.gif" Stretch="UniformToFill" RenderTransformOrigin="1.262,0.915" Canvas.Left="119" Canvas.Top="240" Panel.ZIndex="99"/>
@@ -24,9 +28,9 @@
             <Rectangle Name ="AI2Hit" Fill="Red" Height="101" Stroke="Black" Width="50" Canvas.Left="59" Canvas.Top="78" Visibility="Hidden"/>
 
         </Canvas>
-        <Button Name ="button1" Content="Start" FontSize="16" FontWeight="Bold" Background="White" Foreground="Brown" HorizontalAlignment="Left" Height="45" Margin="328,641,0,0" VerticalAlignment="Top" Width="92" Click="Button_Click_1"/>
-        <TextBox Name="Stats" HorizontalAlignment="Left" Height="188" Margin="596,612,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194"/>
-        <MediaElement Name="song" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="24,665,0,0"/>
+        <Button Name ="button1" Content="Start" FontSize="16" FontWeight="Bold" Background="White" Foreground="Brown" HorizontalAlignment="Left" Height="45" Margin="362,471.4,0,0" VerticalAlignment="Top" Width="92" Click="Button_Click_1" Grid.Row="1"/>
+        <TextBox Name="Stats" HorizontalAlignment="Left" Height="188" Margin="10,434.4,0,0" TextWrapping="Wrap" Text="Developer Stats" VerticalAlignment="Top" Width="194" Visibility="Hidden" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Center" Height="66" TextWrapping="Wrap" Text="FAST AND FURIOUS" TextBlock.FontSize="45" TextAlignment="Center" VerticalAlignment="Top" Width="795" FontFamily="Impact" Background="Black" Foreground="White" Margin="5,10,0,0"/>
 
 
     </Grid>
